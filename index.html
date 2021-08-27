@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dictonary App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400&display=swap"
+    />
+  </head>
+
+  <body>
+    <nav>
+      <div class="container">
+        <p>Dictionary</p>
+      </div>
+    </nav>
+
+    <section class="input container">
+      <h2>Type your word</h2>
+      <div class="form__wrap">
+        <form class="input__wrap">
+          <input type="text" placeholder="Enter a word" id="input" onkeypress="search(e)" />
+          <button id="search" type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="data container">
+      <span class="loading">Loading...</span>
+      <p class="def"></p>
+      <div class="audio"></div>
+      <div class="not__found"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
